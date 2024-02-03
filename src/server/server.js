@@ -20,7 +20,7 @@ class Server {//railway, digitalocean, heroku
     }
 
     routes(){
-        this.app.get('',(req, res) => { res.send("Aplicacion ejecutandose")});
+        this.app.get('', (req,res)=> { res.send("aplicacion ejecutandose")});
         this.app.use('/api', routerProductos)
     }
     async connectDB() {
